@@ -40,7 +40,7 @@
                   ((buffer-modified-p)
                    (propertize " * " 'face 'mode-line-modified-face))
                   (t " - "))
-            (propertize (format-mode-line " %b") 'face 'mode-line-buffer-name-face))
+            (propertize (format-mode-line " %b | %m") 'face 'mode-line-buffer-name-face))
            (format-mode-line
             (concat
              "%c, %l/"
