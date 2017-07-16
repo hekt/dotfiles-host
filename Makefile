@@ -1,10 +1,13 @@
-.PHONY: install
-install: install-symlink
+.PHONY: install test
 
-.PHONY: install-symlink
-install-symlink:
-	@bash ./scripts/install-symlink.sh
+#
+# install
+#
+install:
+	@bash ./scripts/install.sh
 
-.PHONY: test
+#
+# test
+#
 test:
 	@bash ./tests/install-test.sh
