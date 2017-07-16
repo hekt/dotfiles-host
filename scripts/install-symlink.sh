@@ -15,6 +15,6 @@ for f in ${FILES[@]}; do
     if [ -e $HOME/$f ]; then
         echo "$HOME/$f already exists"
     else
-        ln -s $PARENT_DIR/$f $HOME/$f
+        ln -s $PARENT_DIR/files/$f $HOME/$f
     fi
 done
