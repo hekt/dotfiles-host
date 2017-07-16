@@ -7,4 +7,4 @@ install-symlink:
 
 .PHONY: test
 test:
-	true
+	@bash ./tests/install-test.sh
