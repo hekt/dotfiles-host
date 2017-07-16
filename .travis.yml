@@ -1,0 +1,10 @@
+language: bash
+notifications:
+  email: false
+install: true
+before_script:
+  - mkdir $HOME/testhome
+  - export HOME=$HOME/testhome
+script:
+  - make install
+  - make test
