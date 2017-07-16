@@ -15,6 +15,7 @@
 (setq scroll-error-top-bottom t)
 (setq-default tab-width 4 indent-tabs-mode nil)
 (setq-default fill-column 72)
+(delete-selection-mode t)
 
 ;; sound
 (setq ring-bell-function 'ignore)
