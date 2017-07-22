@@ -3,7 +3,6 @@
 (custom-theme-set-faces
  'my-tomorrow-night-eighties
 
- '(default ((t (:background "default" :foreground "default"))))
  '(region ((t (:background "#666666"))))
  '(hl-line ((t (:background "#515151"))))
 
