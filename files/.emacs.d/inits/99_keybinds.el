@@ -37,4 +37,4 @@
   (require 'osx-clipboard) ;; elpa のものとは別
   (define-key global-map (kbd "C-c M-v") 'osx-pbpaste)
   (define-key global-map (kbd "C-c M-c") 'osx-pbcopy)
-  (define-key global-map (kbd "C-c M-x") 'osx-pbcut)))
+  (define-key global-map (kbd "C-c M-x") 'osx-pbcut))
