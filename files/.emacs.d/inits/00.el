@@ -11,6 +11,7 @@
 (setq initial-scratch-message nil)
 
 ;; editing
+(prefer-coding-system 'utf-8)
 (setq scroll-step 1)
 (setq scroll-error-top-bottom t)
 (setq-default tab-width 4 indent-tabs-mode nil)
