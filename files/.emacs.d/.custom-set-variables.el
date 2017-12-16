@@ -7,7 +7,7 @@
  '(helm-truncate-lines t t)
  '(package-selected-packages
    (quote
-    (yaml-mode init-loader auto-complete helm js2-mode markdown-mode multiple-cursors php-mode popwin typescript-mode yasnippet))))
+    (neotree toml-mode rust-mode yaml-mode init-loader auto-complete helm js2-mode markdown-mode multiple-cursors php-mode popwin typescript-mode yasnippet))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
