@@ -12,12 +12,15 @@
                 "location" "console" "JSON" "navigator"
                 ;; new apis
                 "FileReader" "localStorage" "sessionStorage" "history"
+                "MutationObserver"
                 ;; libs
                 "$" "jQuery" "Vue" "chrome"
                 ;; node.js
                 "global" "require" "process" "module" "exports"
                 ;; mocha
                 "describe" "it" "before" "after" "beforeEach" "afterEach"
+                ;; Web Extensions
+                "browser"
                 ))
 
 ;; typescript-mode
