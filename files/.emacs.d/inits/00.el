@@ -81,3 +81,7 @@
 (setq yas-triggers-in-field t)
 (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
 (yas-global-mode 1)
+
+;; neotree
+(setq neo-smart-open t)
+(setq neo-window-fixed-size nil)
