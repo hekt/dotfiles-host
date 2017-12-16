@@ -36,6 +36,7 @@
  '(warning ((t (:foreground "yellow" :weight bold))))
  '(highlight ((t (:background "#999999"))))
  '(fringe ((t (:foreground "#999999" :background nil))))
+ '(vertical-border ((t (:foreground "#454545" :background "#454545"))))
 
  ;; search
  '(match ((t (:foreground "yellow" :inverse-video t))))
@@ -80,12 +81,13 @@
  '(helm-match ((t :inherit match)))
 
  ;; 括弧
- '(show-paren-match ((t (:foreground "cyan" :background "#666666"))))
- '(show-paren-mismatch ((t (:foreground "red" :background "#666666"))))
+ '(show-paren-match ((t (:foreground "cyan" :background "color-240"))))
+ '(show-paren-mismatch ((t (:foreground "red" :background "color-240"))))
 
  ;; whitespace-mode
- '(whitespace-tab ((t (:foreground "#999999"))))
- '(whitespace-space ((t (:foreground "#999999"))))
+ ;; '(whitespace-newline ((t (:foreground "color-242"))))
+ '(whitespace-tab ((t (:foreground "color-242"))))
+ '(whitespace-space ((t (:foreground "color-242"))))
  )
 
 ;;;###autoload
