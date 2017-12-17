@@ -92,7 +92,6 @@
  ;; neotree
  '(neo-dir-link-face ((t(:foreground "blue"))))
  '(neo-file-link-face ((t(:foreground "color-250"))))
- '(neo-banner-face ((t(:foreground "green"))))
  '(neo-header-face ((t(:foreground "blue"))))
  '(neo-root-dir-face ((t(:foreground "green"))))
  )

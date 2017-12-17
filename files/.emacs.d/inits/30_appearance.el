@@ -55,6 +55,9 @@
 (make-face 'mode-line-modified-face)
 (set-face-attribute 'mode-line-modified-face nil :foreground "blue")
 
+;; neotree modeline
+(setq neo-mode-line-format nil)
+
 (defun tne-theme()
   (interactive)
   (load-theme 'my-tomorrow-night-eighties t)
