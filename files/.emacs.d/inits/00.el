@@ -83,5 +83,8 @@
 (yas-global-mode 1)
 
 ;; neotree
-(setq neo-smart-open t)
-(setq neo-window-fixed-size nil)
+(custom-set-variables
+ '(neo-smart-open t)
+ '(neo-window-width 28)
+ '(neo-window-fixed-size nil)
+ )
