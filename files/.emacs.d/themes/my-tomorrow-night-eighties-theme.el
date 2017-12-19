@@ -94,6 +94,7 @@
  '(neo-file-link-face ((t(:foreground "color-250"))))
  '(neo-header-face ((t(:foreground "blue"))))
  '(neo-root-dir-face ((t(:foreground "green"))))
+ '(neo-expand-btn-face ((t(:foreground "magenta"))))
  )
 
 ;;;###autoload
