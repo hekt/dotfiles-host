@@ -95,6 +95,9 @@
  '(neo-header-face ((t(:foreground "blue"))))
  '(neo-root-dir-face ((t(:foreground "green"))))
  '(neo-expand-btn-face ((t(:foreground "magenta"))))
+
+ ;; js2
+ '(js2-function-call ((t(:foreground "magenta"))))
  )
 
 ;;;###autoload
