@@ -88,3 +88,8 @@
  '(neo-window-width 28)
  '(neo-window-fixed-size nil)
  )
+
+;; swoop
+;; disable auto insertion
+(custom-set-variables
+ '(swoop-pre-input-point-at-function: (lambda ())))

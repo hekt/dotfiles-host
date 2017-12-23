@@ -79,6 +79,14 @@
  '(helm-buffer-process ((t (:foreground "magenta"))))
  '(helm-buffer-size ((t (:foreground "#999999"))))
  '(helm-match ((t :inherit match)))
+ '(helm-header ((t :foreground "white" :background "color-240")))
+
+ ;; swoop
+ '(swoop-face-header-format-line ((t :foreground "white" :background "color-240")))
+ '(swoop-face-line-number ((t :foreground "color-245")))
+ '(swoop-face-line-buffer-name ((t :foreground "yellow")))
+ '(swoop-face-target-line ((t :background "color-240")))
+ '(swoop-face-target-words ((t :foreground "color-240" :background "cyan")))
 
  ;; 括弧
  '(show-paren-match ((t (:foreground "cyan" :background "color-240"))))

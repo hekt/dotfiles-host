@@ -28,6 +28,9 @@
 (define-key helm-map (kbd "C-h") 'delete-backward-char)
 (define-key helm-find-files-map (kbd "C-h") 'delete-backward-char)
 
+;; swoop
+(define-key global-map (kbd "C-c s") 'swoop)
+
 ;; yasnippet
 (define-key yas-minor-mode-map (kbd "C-]") 'yas-next-field)
 
