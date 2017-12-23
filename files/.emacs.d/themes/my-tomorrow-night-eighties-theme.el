@@ -97,7 +97,7 @@
  '(neo-expand-btn-face ((t (:foreground "magenta"))))
 
  ;; js2
- '(js2-function-call ((t(:foreground "magenta"))))
+ '(js2-function-call ((t(:foreground "cyan"))))
  )
 
 ;;;###autoload
