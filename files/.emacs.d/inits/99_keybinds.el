@@ -34,6 +34,9 @@
 ;; yasnippet
 (define-key yas-minor-mode-map (kbd "C-]") 'yas-next-field)
 
+;; neotree
+(define-key global-map (kbd "C-c t") 'neotree-toggle)
+
 ;; osx-clipboard
 (when (eq system-type 'darwin)
   (setq mac-option-modifier 'meta)
