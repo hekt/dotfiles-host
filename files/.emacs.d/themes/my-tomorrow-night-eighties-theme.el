@@ -108,12 +108,13 @@
  '(js2-function-call ((t (:foreground "cyan"))))
 
  ;; company
- '(company-tooltip ((t (:foreground "white" :background "#666666"))))
- '(company-tooltip-selection ((t (:background "blue"))))
+ '(company-tooltip ((t (:foreground "black" :background "#cccccc"))))
+ '(company-tooltip-selection ((t (:foreground "white" :background "blue"))))
  '(company-tooltip-annotation ((t (:foreground "yellow"))))
- '(company-tooltip-common ((t (:foreground "yellow"))))
- '(company-scrollbar-bg ((t (:background "#666666"))))
- '(company-scrollbar-fg ((t (:background "#aaaaaa"))))
+ '(company-tooltip-common ((t (:foreground "black"))))
+ '(company-tooltip-common-selection ((t (:foreground "white"))))
+ '(company-scrollbar-bg ((t (:background "#aaaaaa"))))
+ '(company-scrollbar-fg ((t (:background "#666666"))))
  )
 
 ;;;###autoload
