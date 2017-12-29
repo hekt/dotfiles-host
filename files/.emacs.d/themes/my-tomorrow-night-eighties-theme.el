@@ -40,8 +40,8 @@
 
  ;; search
  '(match ((t (:foreground "yellow" :inverse-video t))))
- '(isearch ((t (:foreground "blue" :inverse-video t))))
- '(isearch-lazy-highlight-face ((t (:foreground "cyan" :inverse-video t))))
+ '(isearch ((t (:foreground "red" :inverse-video t))))
+ '(isearch-lazy-highlight-face ((t (:foreground "yellow" :inverse-video t))))
  '(isearch-fail ((t (:inherit font-lock-warning-face :inverse-video t))))
 
  ;; diff
@@ -86,7 +86,7 @@
  '(swoop-face-line-number ((t :foreground "color-245")))
  '(swoop-face-line-buffer-name ((t :foreground "yellow")))
  '(swoop-face-target-line ((t :background "color-240")))
- '(swoop-face-target-words ((t :foreground "color-240" :background "cyan")))
+ '(swoop-face-target-words ((t :foreground "color-240" :background "yellow")))
 
  ;; 括弧
  '(show-paren-match ((t (:foreground "cyan" :background "color-240"))))
