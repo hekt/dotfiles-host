@@ -20,7 +20,23 @@
                '((regexp-quote (system-name)) nil nil))
   )
 
+(use-package company
+  :bind
+  (:map company-active-map
+   ("M-n" . nil)
+   ("M-p" . nil)
+   ("C-h" . nil)
+   ("C-n" . 'company-select-next)
+   ("C-p" . 'company-select-previous))
+  :config
+  (global-company-mode t)
+  (setq company-idle-delay 0)
+  (setq company-minimum-prefix-length 4)
+  (setq company-selection-wrap-around t)
+  )
+
 (use-package auto-complete
+  :disabled
   :bind
   (:map ac-menu-map
    ("C-n" . 'ac-next)

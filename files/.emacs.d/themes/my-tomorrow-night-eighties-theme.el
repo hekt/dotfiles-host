@@ -105,7 +105,15 @@
  '(neo-expand-btn-face ((t (:foreground "magenta"))))
 
  ;; js2
- '(js2-function-call ((t(:foreground "cyan"))))
+ '(js2-function-call ((t (:foreground "cyan"))))
+
+ ;; company
+ '(company-tooltip ((t (:foreground "white" :background "#666666"))))
+ '(company-tooltip-selection ((t (:background "blue"))))
+ '(company-tooltip-annotation ((t (:foreground "yellow"))))
+ '(company-tooltip-common ((t (:foreground "yellow"))))
+ '(company-scrollbar-bg ((t (:background "#666666"))))
+ '(company-scrollbar-fg ((t (:background "#aaaaaa"))))
  )
 
 ;;;###autoload
