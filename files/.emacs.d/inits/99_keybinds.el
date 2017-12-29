@@ -14,29 +14,6 @@
 ;; compile
 (global-set-key (kbd "C-c c") 'compile)
 
-;; multiple-cursors
-(define-key global-map (kbd "C-M-m") 'mc/mark-all-in-region)
-
-;; auto-complete
-(define-key ac-menu-map (kbd "C-n") 'ac-next)
-(define-key ac-menu-map (kbd "C-p") 'ac-previous)
-
-;; helm
-(define-key global-map (kbd "C-c a") 'helm-mini)
-(define-key global-map (kbd "C-c C-f") 'helm-find-files)
-(define-key global-map (kbd "M-y") 'helm-show-kill-ring)
-(define-key helm-map (kbd "C-h") 'delete-backward-char)
-(define-key helm-find-files-map (kbd "C-h") 'delete-backward-char)
-
-;; swoop
-(define-key global-map (kbd "C-c s") 'swoop)
-
-;; yasnippet
-(define-key yas-minor-mode-map (kbd "C-]") 'yas-next-field)
-
-;; neotree
-(define-key global-map (kbd "C-c t") 'neotree-toggle)
-
 ;; osx-clipboard
 (when (eq system-type 'darwin)
   (setq mac-option-modifier 'meta)
