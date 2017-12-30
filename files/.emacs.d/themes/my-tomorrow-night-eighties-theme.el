@@ -14,7 +14,6 @@
  '(font-lock-doc-face ((t (:foreground "#999999" :slant italic))))
  '(font-lock-doc-string-face ((t (:foreground "#999999" :slant italic))))
  '(font-lock-function-name-face ((t (:foreground "yellow"))))
- '(font-lock-keyword-face ((t (:foreground "green"))))
  '(font-lock-keyword-face ((t (:foreground "magenta"))))
  '(font-lock-negation-char-face ((t (:foreground "red"))))
  '(font-lock-preprocessor-face ((t (:foreground "red"))))
