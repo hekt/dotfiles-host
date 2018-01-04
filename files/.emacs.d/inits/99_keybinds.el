@@ -5,6 +5,9 @@
 (global-set-key (kbd "<backtab>") 'un-indent-by-removing-2-spaces)
 (global-set-key (kbd "C-m") 'newline-and-indent)
 
+;; bind C-h as delete-backward-char in mini buffer
+(define-key key-translation-map [?\C-h] [?\C-?])
+
 ;; auto complete ( { [ "
 (global-set-key (kbd "(") 'skeleton-pair-insert-maybe)
 (global-set-key (kbd "{") 'skeleton-pair-insert-maybe)

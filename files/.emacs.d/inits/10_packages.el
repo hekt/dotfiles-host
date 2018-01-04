@@ -56,11 +56,7 @@
   :bind
   (("C-c a" . 'helm-mini)
    ("C-c C-f" . 'helm-find-files)
-   ("M-y" . 'helm-show-kill-ring)
-   :map helm-map
-   ("C-h" . 'delete-backward-char)
-   :map helm-find-files-map
-   ("C-h" . 'delete-backward-char))
+   ("M-y" . 'helm-show-kill-ring))
   :config
   (helm-mode 0)
   (setq helm-use-line-number-face "")
