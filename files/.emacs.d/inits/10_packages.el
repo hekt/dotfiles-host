@@ -55,6 +55,7 @@
 (use-package helm
   :bind
   (("C-c a" . 'helm-mini)
+   ("C-c f" . 'helm-find)
    ("C-c C-f" . 'helm-find-files)
    ("M-y" . 'helm-show-kill-ring))
   :config
