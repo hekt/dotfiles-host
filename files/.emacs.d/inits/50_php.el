@@ -20,7 +20,18 @@
    ("{" . 'skeleton-pair-insert-maybe)
    ("C-c n" . 'php-ns-replace))
   :init
-  (add-hook 'php-mode-hook (lambda () (setq tab-width 4 c-basic-offset 4 indent-tabs-mode t)))
+  (add-hook 'php-mode-hook
+            (lambda ()
+              (setq tab-width 4 c-basic-offset 4 indent-tabs-mode t)
+              ;; ac-php
+              (require 'ac-php)
+              (setq ac-sources '(ac-source-php))
+              (require 'company-php)
+              (company-mode t)
+              (ac-php-core-eldoc-setup) ;; enable eldoc
+              (make-local-variable 'company-backends)
+              (add-to-list 'company-backends 'company-ac-php-backend)
+              ))
   ;; flycheck
   ;; (add-hook 'php-mode-hook 'flycheck-mode)
   )

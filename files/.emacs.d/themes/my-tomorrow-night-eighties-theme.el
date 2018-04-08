@@ -109,7 +109,8 @@
  ;; company
  '(company-tooltip ((t (:foreground "black" :background "#cccccc"))))
  '(company-tooltip-selection ((t (:foreground "white" :background "blue"))))
- '(company-tooltip-annotation ((t (:foreground "yellow"))))
+ '(company-tooltip-annotation ((t (:foreground "black"))))
+ '(company-tooltip-annotation-selection ((t (:foreground "white"))))
  '(company-tooltip-common ((t (:foreground "black"))))
  '(company-tooltip-common-selection ((t (:foreground "white"))))
  '(company-scrollbar-bg ((t (:background "#aaaaaa"))))
