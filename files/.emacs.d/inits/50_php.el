@@ -37,6 +37,7 @@
     (add-to-list 'company-backends 'company-ac-php-backend)
     )
   (add-hook 'php-mode-hook 'my/php-mode-hook)
+  (add-hook 'php-mode-hook 'php-enable-psr2-coding-style)
   ;; flycheck
   ;; (add-hook 'php-mode-hook 'flycheck-mode)
   )
