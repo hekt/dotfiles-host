@@ -48,6 +48,7 @@
   )
 
 (use-package multiple-cursors
+  :defer t
   :bind
   (("C-M-m" . 'mc/mark-all-in-region))
   )
@@ -71,6 +72,7 @@
     (kill-new (buffer-substring (point) (field-end)))))
 
 (use-package popwin
+  :defer t
   :config
   (setq display-buffer-function 'popwin:display-buffer)
   (setq popwin:special-display-config
@@ -91,6 +93,7 @@
   )
 
 (use-package neotree
+  :defer t
   :bind
   (("C-c t" . 'neotree-toggle))
   :config
@@ -101,6 +104,7 @@
   )
 
 (use-package swoop
+  :defer t
   :bind
   (("C-c s" . 'swoop))
   :config
