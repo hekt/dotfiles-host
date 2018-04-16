@@ -88,8 +88,8 @@
  '(swoop-face-target-words ((t :foreground "color-240" :background "yellow")))
 
  ;; paren
- '(show-paren-match ((t (:foreground "cyan" :background "color-240"))))
- '(show-paren-mismatch ((t (:foreground "red" :background "color-240"))))
+ '(show-paren-match ((t (:foreground "white" :background "green"))))
+ '(show-paren-mismatch ((t (:foreground "white" :background "red"))))
 
  ;; whitespace-mode
  ;; '(whitespace-newline ((t (:foreground "color-242"))))
