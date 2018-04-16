@@ -87,7 +87,7 @@
  '(swoop-face-target-line ((t :background "color-240")))
  '(swoop-face-target-words ((t :foreground "color-240" :background "yellow")))
 
- ;; 括弧
+ ;; paren
  '(show-paren-match ((t (:foreground "cyan" :background "color-240"))))
  '(show-paren-mismatch ((t (:foreground "red" :background "color-240"))))
 
@@ -115,6 +115,11 @@
  '(company-tooltip-common-selection ((t (:foreground "white"))))
  '(company-scrollbar-bg ((t (:background "#aaaaaa"))))
  '(company-scrollbar-fg ((t (:background "#666666"))))
+
+ ;; defined by 00.el
+ '(mode-line-buffer-name-face ((t (:foreground nil))))
+ '(mode-line-read-only-face ((t (:foreground "red"))))
+ '(mode-line-modified-face ((t (:foreground "blue"))))
  )
 
 ;;;###autoload

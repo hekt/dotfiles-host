@@ -3,13 +3,13 @@
 (column-number-mode t)
 (delete-selection-mode t)
 (prefer-coding-system 'utf-8)
+(auto-insert-mode)
 (setq-default tab-width 4 indent-tabs-mode nil)
 (setq-default fill-column 72)
 
-;; hide a password
-(add-hook 'comint-output-filter-functions
-          'comint-watch-for-password-prompt)
+;; show-paren-mode
+(show-paren-mode t)
+(setq show-paren-style 'parenthesis)
 
-;; autoinsert
-(auto-insert-mode)
-(define-auto-insert "\\.php$" "template.php")
+;; hide a password on shell-mode
+(add-hook 'comint-output-filter-functions 'comint-watch-for-password-prompt)

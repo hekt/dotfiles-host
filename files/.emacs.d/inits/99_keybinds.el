@@ -17,20 +17,16 @@
 ;; compile
 (global-set-key (kbd "C-c c") 'compile)
 
-;; osx-clipboard
-(when (eq system-type 'darwin)
-  (setq mac-option-modifier 'meta)
-  (require 'osx-clipboard) ;; elpa のものとは別
-  (define-key global-map (kbd "C-c M-v") 'osx-pbpaste)
-  (define-key global-map (kbd "C-c M-c") 'osx-pbcopy)
-  (define-key global-map (kbd "C-c M-x") 'osx-pbcut))
-
 ;; C-o as open-line-and-indent
 ;; http://ochiailab.blogspot.jp/2014/04/emacsc-o.html
-(defun open-line-and-indent ()
+(defun my/open-line-and-indent ()
   "Open a line and indent the next line."
   (interactive)
   (save-excursion
     (newline)
     (indent-for-tab-command)))
-(global-set-key (kbd "C-o") 'open-line-and-indent)
+(global-set-key (kbd "C-o") 'my/open-line-and-indent)
+
+;; osx
+(when (eq system-type 'darwin)
+  (setq mac-option-modifier 'meta))

@@ -20,6 +20,12 @@
                '((regexp-quote (system-name)) nil nil))
   )
 
+(use-package linum
+  :config
+  (global-linum-mode t)
+  (setq linum-format "%3d ")
+  )
+
 (use-package company
   :bind
   (:map company-active-map
@@ -86,10 +92,11 @@
   :bind
   (:map yas-minor-mode-map
    ("C-]" . 'yas-next-field))
+  :init
+  (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
   :config
   (yas-global-mode 1)
   (setq yas-triggers-in-field t)
-  (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
   )
 
 (use-package neotree
@@ -127,4 +134,14 @@
           (tab-mark ?\t [?\xBB ?\t] [?\\ ?\t])))
   (setq whitespace-space-regexp "\\(\u3000+\\)")
   (global-whitespace-mode 1)
+  )
+
+;; elpa のものとは別
+(use-package osx-clipboard
+  :if (eq system-type 'darwin)
+  :defer t
+  :bind
+  (("C-c M-v" . 'osx-pbpaste)
+   ("C-c M-c" . 'osx-pbcopy)
+   ("C-c M-x" . 'osx-pbcut))
   )
