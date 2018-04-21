@@ -116,10 +116,10 @@
  '(company-scrollbar-bg ((t (:background "#aaaaaa"))))
  '(company-scrollbar-fg ((t (:background "#666666"))))
 
- ;; defined by 00.el
- '(mode-line-buffer-name-face ((t (:foreground nil))))
- '(mode-line-read-only-face ((t (:foreground "red"))))
- '(mode-line-modified-face ((t (:foreground "blue"))))
+ ;; defined by 30_apperances.el
+ '(my/mode-line-buffer-name-face ((t (:foreground nil))))
+ '(my/mode-line-read-only-face ((t (:foreground "red"))))
+ '(my/mode-line-modified-face ((t (:foreground "blue"))))
  )
 
 ;;;###autoload
