@@ -150,6 +150,7 @@
 ;; elpa のものとは別
 (use-package osx-clipboard
   :if (eq system-type 'darwin)
+  ;; defer が指定されると bind だけだと動かず commands が必要 (要検証)
   :defer t
   :commands (osx-pbcopy osx-pbcut osx-pbpaste)
   :bind
