@@ -140,6 +140,7 @@
 (use-package osx-clipboard
   :if (eq system-type 'darwin)
   :defer t
+  :commands (osx-pbcopy osx-pbcut osx-pbpaste)
   :bind
   (("C-c M-v" . 'osx-pbpaste)
    ("C-c M-c" . 'osx-pbcopy)
