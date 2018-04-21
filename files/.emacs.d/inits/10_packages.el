@@ -2,6 +2,7 @@
   (defmacro use-package (&rest args)))
 
 (use-package recentf
+  :ensure t
   :config
   (setq recentf-auto-cleanup 'never)
   (setq recentf-max-menu-items 20)
@@ -9,6 +10,7 @@
   )
 
 (use-package tramp
+  :ensure t
   :config
   (setq tramp-terminal-type "dump")
   (setq tramp-default-method "ssh")
@@ -21,12 +23,14 @@
   )
 
 (use-package linum
+  :ensure t
   :config
   (global-linum-mode t)
   (setq linum-format "%3d ")
   )
 
 (use-package company
+  :ensure t
   :bind
   (:map company-active-map
    ("M-n" . nil)
@@ -54,12 +58,14 @@
   )
 
 (use-package multiple-cursors
+  :ensure t
   :defer t
   :bind
   (("C-M-m" . 'mc/mark-all-in-region))
   )
 
 (use-package helm
+  :ensure t
   :bind
   (("C-c a" . 'helm-mini)
    ("C-c f" . 'helm-find)
@@ -78,6 +84,7 @@
     (kill-new (buffer-substring (point) (field-end)))))
 
 (use-package popwin
+  :ensure t
   :defer t
   :config
   (setq display-buffer-function 'popwin:display-buffer)
@@ -89,6 +96,7 @@
           ("*Backtrace*"))))
 
 (use-package yasnippet
+  :ensure t
   :bind
   (:map yas-minor-mode-map
    ("C-]" . 'yas-next-field))
@@ -100,6 +108,7 @@
   )
 
 (use-package neotree
+  :ensure t
   :defer t
   :bind
   (("C-c t" . 'neotree-toggle))
@@ -111,6 +120,7 @@
   )
 
 (use-package swoop
+  :ensure t
   :defer t
   :bind
   (("C-c s" . 'swoop))
@@ -120,6 +130,7 @@
   )
 
 (use-package whitespace
+  :ensure t
   :config
   ;; display tab/space
   ;; http://d.hatena.ne.jp/syohex/20110119/1295450495
