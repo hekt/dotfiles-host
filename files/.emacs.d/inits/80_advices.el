@@ -8,4 +8,4 @@
 (defun my/open-line-and-indent ()
   (interactive)
   (save-excursion (newline) (indent-for-tab-command)))
-(advice-add 'open-line :override 'my/open-line-after-indent)
+(advice-add 'open-line :override 'my/open-line-and-indent)
