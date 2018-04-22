@@ -31,4 +31,3 @@
 
 ;; theme
 (load-theme 'my-tomorrow-night-eighties t)
-(call-process-shell-command "tmux source-file ~/.tmux/tomorrow-night-eighties.conf")
