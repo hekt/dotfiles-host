@@ -13,11 +13,12 @@
   (("\\.php$" . php-mode))
   :bind
   (:map php-mode-map
-   ("(" . 'skeleton-pair-insert-maybe)
-   ("{" . 'skeleton-pair-insert-maybe)
    ("C-c n" . 'my/php-ns-replace)
    ("C-c j" . 'ac-php-find-symbol-at-point)
-   ("C-c b" . 'ac-php-location-stack-back))
+   ("C-c b" . 'ac-php-location-stack-back)
+   ;; global の設定が上書きされる
+   ("(" . 'skeleton-pair-insert-maybe)
+   ("{" . 'skeleton-pair-insert-maybe))
   :init
   (add-hook 'php-mode-hook 'my/php-mode-hook)
   (add-hook 'php-mode-hook 'php-enable-psr2-coding-style)
