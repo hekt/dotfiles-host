@@ -8,8 +8,6 @@
         ("melpa" . "http://melpa.org/packages/")))
 
 (setq custom-file (expand-file-name ".custom-set-variables.el" user-emacs-directory))
-(when (file-exists-p custom-file)
-  (load custom-file))
+(when (file-exists-p custom-file) (load custom-file))
 
-(require 'init-loader)
-(init-loader-load "~/.emacs.d/inits")
+(when (require 'init-loader nil t) (init-loader-load "~/.emacs.d/inits"))
