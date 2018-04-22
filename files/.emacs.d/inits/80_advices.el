@@ -1,0 +1,11 @@
+(defun my/kill-line-and-fixup (&rest r)
+  (when (and (not (bolp)) (eolp))
+    (forward-char)
+    (fixup-whitespace)
+    (backward-char)))
+(advice-add 'kill-line :before 'my/kill-line-and-fixup)
+
+(defun my/open-line-and-indent ()
+  (interactive)
+  (save-excursion (newline) (indent-for-tab-command)))
+(advice-add 'open-line :override 'my/open-line-after-indent)

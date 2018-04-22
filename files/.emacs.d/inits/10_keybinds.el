@@ -12,14 +12,6 @@
 (global-set-key (kbd "[") 'skeleton-pair-insert-maybe)
 (setq skeleton-pair 1)
 
-;; C-o as open-line-and-indent
-;; http://ochiailab.blogspot.jp/2014/04/emacsc-o.html
-(defun my/open-line-and-indent ()
-  "Open a line and indent the next line."
-  (interactive)
-  (save-excursion (newline) (indent-for-tab-command)))
-(global-set-key (kbd "C-o") 'my/open-line-and-indent)
-
 ;; osx
 (when (eq system-type 'darwin)
   (setq mac-option-modifier 'meta))
