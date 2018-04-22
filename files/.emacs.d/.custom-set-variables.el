@@ -4,6 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(auto-insert-directory "~/.emacs.d/templates")
+ '(auto-save-default nil)
  '(fill-column 72)
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
@@ -11,6 +12,7 @@
  '(initial-scratch-message nil)
  '(interprogram-cut-function nil t)
  '(interprogram-paste-function nil t)
+ '(make-backup-files nil)
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote

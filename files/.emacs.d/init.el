@@ -11,9 +11,5 @@
 (when (file-exists-p custom-file)
   (load custom-file))
 
-;; disable backup and autosave
-(setq make-backup-files nil)
-(setq auto-save-default nil)
-
 (require 'init-loader)
 (init-loader-load "~/.emacs.d/inits")
