@@ -93,7 +93,8 @@
           ("*Completions*")
           ("*compilation*")
           ("*Occur*")
-          ("*Backtrace*"))))
+          ("*Backtrace*")))
+  )
 
 (use-package yasnippet
   :ensure t
