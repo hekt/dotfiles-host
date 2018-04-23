@@ -78,10 +78,10 @@
   (setq helm-truncate-lines t)
   ;; Emulate 'kill-line' in helm minibuffer
   (setq helm-delete-minibuffer-contents-from-point t)
-  (defadvice helm-delete-minibuffer-contents 
-      (before helm-emulate-kill-line activate)
-    "Emulate 'kill-line' in helm minibuffer"
-    (kill-new (buffer-substring (point) (field-end)))))
+  (defun my/helm-mini-emulate-kill-line (&rest r)
+    (kill-new (buffer-substring (point) (field-end))))
+  (advice-add 'helm-delete-minibuffer-contents :before 'my/helm-mini-emulate-kill-line)
+  )
 
 (use-package popwin
   :ensure t
