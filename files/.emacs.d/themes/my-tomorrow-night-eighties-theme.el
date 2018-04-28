@@ -79,6 +79,7 @@
  '(helm-buffer-size ((t (:foreground "#999999"))))
  '(helm-match ((t :inherit match)))
  '(helm-header ((t :foreground "white" :background "color-240")))
+ '(helm-candidate-number ((t :foreground nil :background nil)))
 
  ;; swoop
  '(swoop-face-header-format-line ((t :foreground "white" :background "color-240")))
