@@ -7,6 +7,7 @@
         ("C-c j" . 'godef-jump)
         ("C-c b" . 'pop-tag-mark))
   :init
+  (setq gofmt-command "goimports")
   (add-hook 'go-mode-hook 'my/go-mode-hook)
   (add-hook 'go-mode-hook 'go-eldoc-setup)
   (add-hook 'before-save-hook 'gofmt-before-save)
