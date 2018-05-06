@@ -1,29 +1,29 @@
 ;; auto-insert-mode
 (define-auto-insert "\\.php$" "template.php")
 
-(use-package company-php
-  :defer t
-  :config
-  (ac-php-core-eldoc-setup)
-  )
-
 (use-package php-mode
   :defer t
   :mode
   (("\\.php$" . php-mode))
   :bind
   (:map php-mode-map
-   ("C-c n" . 'my/php-ns-replace)
-   ("C-c j" . 'ac-php-find-symbol-at-point)
-   ("C-c b" . 'ac-php-location-stack-back)
-   ;; global の設定が上書きされる
-   ("(" . 'skeleton-pair-insert-maybe)
-   ("{" . 'skeleton-pair-insert-maybe))
+        ("C-c n" . 'my/php-ns-replace)
+        ("C-c j" . 'ac-php-find-symbol-at-point)
+        ("C-c b" . 'ac-php-location-stack-back)
+        ;; global の設定が上書きされる
+        ("(" . 'skeleton-pair-insert-maybe)
+        ("{" . 'skeleton-pair-insert-maybe))
   :init
   (add-hook 'php-mode-hook 'my/php-mode-hook)
   (add-hook 'php-mode-hook 'php-enable-psr2-coding-style)
   ;; flycheck
   ;; (add-hook 'php-mode-hook 'flycheck-mode)
+  )
+
+(use-package company-php
+  :defer t
+  :config
+  (ac-php-core-eldoc-setup)
   )
 
 (defun my/php-mode-hook ()
