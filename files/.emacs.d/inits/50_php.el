@@ -32,7 +32,7 @@
   (setq indent-tabs-mode t)
   ;; company-php
   (make-local-variable 'company-backends)
-  (add-to-list 'company-backends 'company-ac-php-backend)
+  (add-to-list 'company-backends '(company-ac-php-backend company-dabbrev-code))
   )
 
 (defun my/php-ns-replace ()

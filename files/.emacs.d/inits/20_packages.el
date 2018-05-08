@@ -43,7 +43,13 @@
   (setq company-idle-delay 0)
   (setq company-minimum-prefix-length 4)
   (setq company-selection-wrap-around t)
+  (setq company-transformers '(company-sort-by-statistics company-sort-by-backend-importance))
   )
+
+(use-package company-statistics
+  :ensure t
+  :config
+  (company-statistics-mode))
 
 (use-package auto-complete
   :disabled
