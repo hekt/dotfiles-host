@@ -68,9 +68,10 @@
 
  ;; helm
  '(helm-buffer-file ((t (:foreground "magenta"))))
- '(helm-buffer-not-saved ((t (:foreground "cyan" :weight bold))))
+ '(helm-buffer-not-saved ((t (:foreground "yellow" :weight bold))))
+ '(helm-buffer-modified ((t (:foreground "cyan"))))
  '(helm-buffer-saved-out ((t (:foreground "black" :background "red"))))
- '(helm-buffer-directory ((t (:foreground "blue"))))
+ '(helm-buffer-directory ((t (:foreground "black" :background "blue"))))
  '(helm-ff-file ((t (:inherit helm-buffer-file))))
  '(helm-ff-symlink ((t (:inherit helm-buffer-not-saved))))
  '(helm-selection ((t (:foreground nil :background "#515151"))))
@@ -120,7 +121,7 @@
  ;; defined by 30_apperances.el
  '(my/mode-line-buffer-name-face ((t (:foreground nil))))
  '(my/mode-line-read-only-face ((t (:foreground "red"))))
- '(my/mode-line-modified-face ((t (:foreground "blue"))))
+ '(my/mode-line-modified-face ((t (:foreground "cyan"))))
  )
 
 ;;;###autoload
