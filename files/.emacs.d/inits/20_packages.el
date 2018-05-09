@@ -51,6 +51,11 @@
   :config
   (company-statistics-mode))
 
+(use-package editorconfig
+  :ensure t
+  :config
+  (editorconfig-mode 1))
+
 (use-package auto-complete
   :disabled
   :bind
