@@ -21,7 +21,7 @@
  '(font-lock-regexp-grouping-construct ((t (:foreground "red"))))
  '(font-lock-string-face ((t (:foreground "green"))))
  '(font-lock-type-face ((t (:foreground "green"))))
- '(font-lock-variable-name-face ((t (:foreground "blue"))))
+ '(font-lock-variable-name-face ((t (:foreground "cyan"))))
  '(font-lock-warning-face ((t (:weight bold :foreground "red"))))
 
  '(header-line ((t (:foreground "#999999" :background nil))))
