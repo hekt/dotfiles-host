@@ -16,7 +16,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (editorconfig company-statistics go-mode company-go go-eldoc company-php ac-php company use-package swoop neotree toml-mode rust-mode yaml-mode init-loader auto-complete helm js2-mode markdown-mode multiple-cursors php-mode popwin typescript-mode yasnippet)))
+    (dockerfile-mode editorconfig company-statistics go-mode company-go go-eldoc company-php ac-php company use-package swoop neotree toml-mode rust-mode yaml-mode init-loader auto-complete helm js2-mode markdown-mode multiple-cursors php-mode popwin typescript-mode yasnippet)))
  '(ring-bell-function (quote ignore))
  '(scroll-error-top-bottom t)
  '(scroll-step 1)
