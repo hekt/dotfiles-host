@@ -154,6 +154,12 @@
   (global-whitespace-mode 1)
   )
 
+(use-package expand-region
+  :ensure t
+  :bind
+  (("C-c o" . 'er/expand-region)
+   ("C-c p" . 'er/contract-region)))
+
 ;; elpa のものとは別
 (use-package osx-clipboard
   :if (eq system-type 'darwin)
