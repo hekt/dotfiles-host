@@ -29,6 +29,12 @@
   (setq linum-format "%3d ")
   )
 
+(use-package server
+  :ensure t
+  :config
+  (unless (server-running-p)
+    (server-start)))
+
 (use-package company
   :ensure t
   :bind
