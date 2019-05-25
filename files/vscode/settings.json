@@ -1,0 +1,6 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "workbench.colorTheme": "Solarized Light",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": false
+}
