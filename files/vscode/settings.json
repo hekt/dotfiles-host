@@ -2,5 +2,8 @@
 {
     "workbench.colorTheme": "Solarized Light",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "files.exclude": {
+        "**/.git": false,
+    }
 }
