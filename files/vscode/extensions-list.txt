@@ -1,3 +1,4 @@
+bmewburn.vscode-intelephense-client
 Compulim.vscode-clock
 dbaeumer.vscode-eslint
 felixfbecker.php-debug
