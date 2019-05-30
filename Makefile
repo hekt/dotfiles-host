@@ -23,7 +23,7 @@ test:
 .PHONY: install-vs-code-extensions export-installed-vs-code-extensions-list
 
 install-vs-code-extensions:
-	code --list-extensions | comm -23 ./files/vscode/extensions-list.txt - | code --install-extension
+	code --list-extensions | comm -23 ./files/vscode/extensions-list.txt - | xargs -L 1 code --install-extension
 
 export-installed-vs-code-extensions-list: files/vscode/extensions-list.txt
 
