@@ -1,6 +1,7 @@
 (prefer-coding-system 'utf-8)
 
 (global-hl-line-mode t)
+(global-display-line-numbers-mode t)
 (delete-selection-mode t)
 (show-paren-mode t)
 (auto-insert-mode)

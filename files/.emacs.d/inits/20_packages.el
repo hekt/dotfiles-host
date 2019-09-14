@@ -22,13 +22,6 @@
                '((regexp-quote (system-name)) nil nil))
   )
 
-(use-package linum
-  :ensure t
-  :config
-  (global-linum-mode t)
-  (setq linum-format "%3d ")
-  )
-
 (use-package server
   :ensure t
   :config
