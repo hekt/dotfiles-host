@@ -13,5 +13,8 @@
     "php-docblocker.author": {
         "name": "hekt",
         "email": "hektorg@gmail.com"
-    }
+    },
+
+    // haskell ide server/engine
+    "languageServerHaskell.hieExecutablePath": "~/.local/bin/hie"
 }
