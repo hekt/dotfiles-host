@@ -2,3 +2,5 @@ elpa/*
 ac-comphist.dat
 recentf
 .mc-lists.el
+lsp-cache
+.lsp-session-v*

@@ -122,6 +122,9 @@
  '(my/mode-line-buffer-name-face ((t (:foreground nil))))
  '(my/mode-line-read-only-face ((t (:foreground "red"))))
  '(my/mode-line-modified-face ((t (:foreground "cyan"))))
+
+ ;; lsp-mode
+ '(lsp-ui-doc-background ((t (:background "color-240"))))
  )
 
 ;;;###autoload
