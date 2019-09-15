@@ -171,6 +171,13 @@
    ("C-c M-c" . 'osx-pbcopy)
    ("C-c M-x" . 'osx-pbcut))
   )
+
+(use-package flymake
+  :bind
+  (:map flymake-mode-map
+        ("C-c e" . 'flymake-goto-next-error))
+  )
+
 (use-package lsp-mode
   :hook
   (haskell-mode . lsp)
@@ -183,40 +190,16 @@
 
 (use-package lsp-ui
   :custom
-  ;; lsp-ui-doc
   (lsp-ui-doc-enable nil)
-  
-  ;; lsp-ui-flycheck
   (lsp-ui-flycheck-enable nil)
-  ;; (lsp-ui-flycheck-live-reporting t)
-  
-  ;; lsp-ui-peek
   (lsp-ui-peek-enable t)
   (lsp-ui-peek-fontify 'on-demand) ;; never, on-demand, or always
-  
-  ;; lsp-ui-imenu
   (lsp-ui-imenu-enable nil)
-  
-  ;; lsp-ui-sideline
   (lsp-ui-sideline-enable nil)
-  
   :commands lsp-ui-mode
   :config
   (add-hook 'lsp-mode-hook 'lsp-ui-mode)
   (eval-after-load "flymake"
     (setq flymake-fringe-indicator-position nil)
     )
-  )
-
-(use-package flymake)
-
-(use-package flymake-diagnostic-at-point
-  :after flymake
-  :custom
-  (flymake-diagnostic-at-point-timer-delay 0.1)
-  (flymake-diagnostic-at-point-error-prefix "[!] ")
-  (flymake-diagnostic-at-point-display-diagnostic-function
-   'flymake-diagnostic-at-point-display-minibuffer)
-  :hook
-  (flymake-mode . flymake-diagnostic-at-point-mode)
   )
