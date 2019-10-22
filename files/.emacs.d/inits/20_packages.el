@@ -182,6 +182,7 @@
   :hook
   (haskell-mode . lsp)
   (php-mode . lsp)
+  (dart-mode . lsp)
   :custom
   ;; (lsp-print-io t)
   (lsp-prefer-flymake 'flymake)
