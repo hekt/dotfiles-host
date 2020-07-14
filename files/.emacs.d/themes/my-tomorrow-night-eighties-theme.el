@@ -128,6 +128,15 @@
 
  ;; lsp-mode
  '(lsp-ui-doc-background ((t (:background "color-240"))))
+
+ ;; web-mode
+ '(web-mode-current-element-highlight-face ((t (:background "brightblack"))))
+ '(web-mode-html-tag-face ((t (:foreground "yellow"))))
+ '(web-mode-html-attr-custom-face ((t (:foreground "cyan"))))
+ '(web-mode-html-attr-name-face ((t (:foreground "cyan"))))
+ '(web-mode-html-attr-equal-face ((t (:foreground "white"))))
+ '(web-mode-html-tag-bracket-face ((t (:foreground "white"))))
+ '(web-mode-block-delimiter-face ((t (:foreground "blue"))))
  )
 
 ;;;###autoload

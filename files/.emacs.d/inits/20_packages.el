@@ -183,9 +183,14 @@
   (haskell-mode . lsp)
   (php-mode . lsp)
   (dart-mode . lsp)
+  (go-mode . lsp) ;; go get golang.org/x/tools/gopls
+  (web-mode . lsp)
+  (typescript-mode . lsp)
   :custom
   ;; (lsp-print-io t)
   (lsp-prefer-flymake 'flymake)
+  (lsp-dart-analysis-sdk-dir "~/bin/flutter/bin/cache/dart-sdk")
+  ;; (lsp-dart-analysis-server-command "~/bin/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot")
   :commands lsp
   )
 
@@ -204,3 +209,25 @@
     (setq flymake-fringe-indicator-position nil)
     )
   )
+
+(use-package web-mode
+  :ensure t
+  :mode
+  (("\\.tsx" . web-mode))
+  :config
+  (setq web-mode-markup-indent-offset 2
+        web-mode-css-indent-offset 2
+        web-mode-code-indent-offset 2
+        web-mode-block-padding 2
+        web-mode-comment-style 2
+        web-mode-enable-css-colorization t
+        web-mode-enable-auto-pairing t
+        web-mode-enable-current-element-highlight t)
+  )
+
+(use-package typescript-mode
+  :mode
+  (("\\.ts$" . typescript-mode))
+  :config
+  (setq indent-tabs-mode nil)
+  (setq typescript-indent-level 2))
