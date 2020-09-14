@@ -40,7 +40,7 @@
   :config
   (global-company-mode t)
   (setq company-idle-delay 0)
-  (setq company-minimum-prefix-length 4)
+  (setq company-minimum-prefix-length 3)
   (setq company-selection-wrap-around t)
   (setq company-transformers '(company-sort-by-statistics company-sort-by-backend-importance))
   )
@@ -196,7 +196,7 @@
 
 (use-package lsp-ui
   :custom
-  (lsp-ui-doc-enable nil)
+  (lsp-ui-doc-enable t)
   (lsp-ui-flycheck-enable nil)
   (lsp-ui-peek-enable t)
   (lsp-ui-peek-fontify 'on-demand) ;; never, on-demand, or always

@@ -9,3 +9,7 @@
 
 ;; hide a password on shell-mode
 (add-hook 'comint-output-filter-functions 'comint-watch-for-password-prompt)
+
+;; use gls instead of macOS ls
+(let ((gls "/usr/local/bin/gls"))
+  (if (file-exists-p gls) (setq insert-directory-program gls)))
