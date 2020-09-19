@@ -214,6 +214,9 @@
   :ensure t
   :mode
   (("\\.tsx" . web-mode))
+  :bind
+  (:map web-mode-map
+        ("C-c j" . 'lsp-ui-peek-find-definitions)))
   :config
   (setq web-mode-markup-indent-offset 2
         web-mode-css-indent-offset 2
