@@ -22,13 +22,6 @@
                '((regexp-quote (system-name)) nil nil))
   )
 
-(use-package linum
-  :ensure t
-  :config
-  (global-linum-mode t)
-  (setq linum-format "%3d ")
-  )
-
 (use-package server
   :ensure t
   :config
@@ -47,7 +40,7 @@
   :config
   (global-company-mode t)
   (setq company-idle-delay 0)
-  (setq company-minimum-prefix-length 4)
+  (setq company-minimum-prefix-length 3)
   (setq company-selection-wrap-around t)
   (setq company-transformers '(company-sort-by-statistics company-sort-by-backend-importance))
   )
@@ -56,6 +49,13 @@
   :ensure t
   :config
   (company-statistics-mode))
+
+(use-package company-lsp
+  :after
+  (lsp-mode company)
+  :init
+  (push 'company-lsp company-backends)
+  )
 
 (use-package editorconfig
   :ensure t
@@ -171,3 +171,66 @@
    ("C-c M-c" . 'osx-pbcopy)
    ("C-c M-x" . 'osx-pbcut))
   )
+
+(use-package flymake
+  :bind
+  (:map flymake-mode-map
+        ("C-c e" . 'flymake-goto-next-error))
+  )
+
+(use-package lsp-mode
+  :hook
+  (haskell-mode . lsp)
+  (php-mode . lsp)
+  (dart-mode . lsp)
+  (go-mode . lsp) ;; go get golang.org/x/tools/gopls
+  (web-mode . lsp)
+  (typescript-mode . lsp)
+  :custom
+  ;; (lsp-print-io t)
+  (lsp-prefer-flymake 'flymake)
+  (lsp-dart-analysis-sdk-dir "~/bin/flutter/bin/cache/dart-sdk")
+  ;; (lsp-dart-analysis-server-command "~/bin/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot")
+  :commands lsp
+  )
+
+(use-package lsp-ui
+  :custom
+  (lsp-ui-doc-enable t)
+  (lsp-ui-flycheck-enable nil)
+  (lsp-ui-peek-enable t)
+  (lsp-ui-peek-fontify 'on-demand) ;; never, on-demand, or always
+  (lsp-ui-imenu-enable nil)
+  (lsp-ui-sideline-enable nil)
+  :commands lsp-ui-mode
+  :config
+  (add-hook 'lsp-mode-hook 'lsp-ui-mode)
+  (eval-after-load "flymake"
+    (setq flymake-fringe-indicator-position nil)
+    )
+  )
+
+(use-package web-mode
+  :ensure t
+  :mode
+  (("\\.tsx" . web-mode))
+  :bind
+  (:map web-mode-map
+        ("C-c j" . 'lsp-ui-peek-find-definitions)))
+  :config
+  (setq web-mode-markup-indent-offset 2
+        web-mode-css-indent-offset 2
+        web-mode-code-indent-offset 2
+        web-mode-block-padding 2
+        web-mode-comment-style 2
+        web-mode-enable-css-colorization t
+        web-mode-enable-auto-pairing t
+        web-mode-enable-current-element-highlight t)
+  )
+
+(use-package typescript-mode
+  :mode
+  (("\\.ts$" . typescript-mode))
+  :config
+  (setq indent-tabs-mode nil)
+  (setq typescript-indent-level 2))

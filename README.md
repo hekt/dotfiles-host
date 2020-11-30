@@ -12,3 +12,10 @@ $ make install # make symlinks on $HOME
 
 1. `M-x package-refresh-contents`
 2. `M-x package-install-selected-packages`
+
+## Visual Studio Code
+
+1. Install VS Code
+2. Make symlink from `vscode/{keybindings.json,settings.json,snippets}` to `{VSCODE_USER_DATA_DIR}/User/`
+    - VSCODE_USER_DATA_DIRECTORY
+        - macOS: `$HOME/Library/Application Support/Code/`

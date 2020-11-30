@@ -16,3 +16,4 @@ done
 test -h $HOME/.tmux.conf
 test -h $HOME/.tmux.d
 test -h $HOME/.emacs.d
+test -h $HOME/.hammerspoon

@@ -29,13 +29,16 @@
  '(mode-line-inactive ((t (:foreground "#393939" :background "#777777"))))
  '(minibuffer-prompt ((t (:foreground "blue"))))
  '(secondary-selection ((t (:background "#666666"))))
- '(linum ((t (:foreground "#666666" :background "#393939"))))
  '(escape-glyph ((t (:foreground "red"))))
  '(success ((t (:foreground "green" :weight bold))))
  '(warning ((t (:foreground "yellow" :weight bold))))
  '(highlight ((t (:background "#999999"))))
  '(fringe ((t (:foreground "#999999" :background nil))))
  '(vertical-border ((t (:foreground "#454545" :background "#454545"))))
+
+ ;; display-line-numbers-mode
+  '(line-number ((t (:foreground "#666666" :background "#393939"))))
+  '(line-number-current-line ((t :foreground "#999999" :background "#454545")))
 
  ;; search
  '(match ((t (:foreground "yellow" :inverse-video t))))
@@ -122,6 +125,18 @@
  '(my/mode-line-buffer-name-face ((t (:foreground nil))))
  '(my/mode-line-read-only-face ((t (:foreground "red"))))
  '(my/mode-line-modified-face ((t (:foreground "cyan"))))
+
+ ;; lsp-mode
+ '(lsp-ui-doc-background ((t (:background "color-240"))))
+
+ ;; web-mode
+ '(web-mode-current-element-highlight-face ((t (:background "brightblack"))))
+ '(web-mode-html-tag-face ((t (:foreground "yellow"))))
+ '(web-mode-html-attr-custom-face ((t (:foreground "cyan"))))
+ '(web-mode-html-attr-name-face ((t (:foreground "cyan"))))
+ '(web-mode-html-attr-equal-face ((t (:foreground "white"))))
+ '(web-mode-html-tag-bracket-face ((t (:foreground "white"))))
+ '(web-mode-block-delimiter-face ((t (:foreground "blue"))))
  )
 
 ;;;###autoload

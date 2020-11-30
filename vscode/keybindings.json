@@ -1,0 +1,14 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    // terminal
+    { "key": "ctrl+shift+t", "command": "workbench.action.terminal.focus" },
+    { "key": "ctrl+shift+t", "command": "workbench.action.focusActiveEditorGroup", "when":"terminalFocus" },
+    { "key": "ctrl+shift+n", "command": "workbench.action.terminal.focusNext" },
+    { "key": "ctrl+shift+p", "command": "workbench.action.terminal.focusPrevious" },
+
+    // text editing
+    { "key": "alt+f", "command": "cursorWordStartRight", "when": "editorTextFocus" },
+    { "key": "alt+b", "command": "cursorWordStartLeft", "when": "editorTextFocus" },
+    { "key": "alt+d", "command": "deleteWordRight", "when": "editorTextFocus" },
+    { "key": "ctrl+i", "command": "editor.action.triggerSuggest", "when": "editorTextFocus" }
+]

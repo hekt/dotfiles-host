@@ -7,6 +7,7 @@ FILES=(
     ".tmux.conf"
     ".tmux.d"
     ".emacs.d"
+    ".hammerspoon"
 )
 
 for f in ${FILES[@]}; do

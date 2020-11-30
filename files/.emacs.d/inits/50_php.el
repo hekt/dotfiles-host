@@ -8,31 +8,19 @@
   :bind
   (:map php-mode-map
         ("C-c n" . 'my/php-ns-replace)
-        ("C-c j" . 'ac-php-find-symbol-at-point)
-        ("C-c b" . 'ac-php-location-stack-back)
+        ("C-c j" . 'lsp-ui-peek-find-definitions)
         ;; global の設定が上書きされる
         ("(" . 'skeleton-pair-insert-maybe)
         ("{" . 'skeleton-pair-insert-maybe))
   :init
   (add-hook 'php-mode-hook 'my/php-mode-hook)
   (add-hook 'php-mode-hook 'php-enable-psr2-coding-style)
-  ;; flycheck
-  ;; (add-hook 'php-mode-hook 'flycheck-mode)
-  )
-
-(use-package company-php
-  :defer t
-  :config
-  (ac-php-core-eldoc-setup)
   )
 
 (defun my/php-mode-hook ()
   (setq tab-width 4)
   (setq c-basic-offset 4)
   (setq indent-tabs-mode t)
-  ;; company-php
-  (make-local-variable 'company-backends)
-  (add-to-list 'company-backends '(company-ac-php-backend company-dabbrev-code))
   )
 
 (defun my/php-ns-replace ()

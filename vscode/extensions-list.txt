@@ -1,0 +1,13 @@
+bmewburn.vscode-intelephense-client
+Compulim.vscode-clock
+dbaeumer.vscode-eslint
+felixfbecker.php-debug
+felixfbecker.php-intellisense
+felixfbecker.php-pack
+ikappas.phpcs
+mads-hartmann.bash-ide-vscode
+ms-python.python
+ms-vscode.Theme-TomorrowKit
+ms-vscode.vscode-typescript-tslint-plugin
+PeterJausovec.vscode-docker
+PKief.material-icon-theme
