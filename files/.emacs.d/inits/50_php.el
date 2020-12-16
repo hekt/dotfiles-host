@@ -20,7 +20,7 @@
 (defun my/php-mode-hook ()
   (setq tab-width 4)
   (setq c-basic-offset 4)
-  (setq indent-tabs-mode t)
+  (setq indent-tabs-mode nil)
   )
 
 (defun my/php-ns-replace ()
