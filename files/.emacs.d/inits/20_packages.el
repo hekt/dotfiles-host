@@ -50,12 +50,12 @@
   :config
   (company-statistics-mode))
 
-(use-package company-lsp
-  :after
-  (lsp-mode company)
-  :init
-  (push 'company-lsp company-backends)
-  )
+;; (use-package company-lsp
+;;   :after
+;;   (lsp-mode company)
+;;   :init
+;;   (push 'company-lsp company-backends)
+;;   )
 
 (use-package editorconfig
   :ensure t
@@ -188,11 +188,18 @@
   (typescript-mode . lsp)
   :custom
   ;; (lsp-print-io t)
+  (lsp-prefer-capf t)
   (lsp-prefer-flymake 'flymake)
   (lsp-dart-analysis-sdk-dir "~/bin/flutter/bin/cache/dart-sdk")
   ;; (lsp-dart-analysis-server-command "~/bin/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot")
   :commands lsp
   )
+;; (defun lsp--sort-completions (completions)
+;;   (lsp-completion--sort-completions completions))
+;; (defun lsp--annotate (item)
+;;   (lsp-completion--annotate item))
+;; (defun lsp--resolve-completion (item)
+;;   (lsp-completion--resolve item))
 
 (use-package lsp-ui
   :custom

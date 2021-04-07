@@ -137,6 +137,10 @@
  '(web-mode-html-attr-equal-face ((t (:foreground "white"))))
  '(web-mode-html-tag-bracket-face ((t (:foreground "white"))))
  '(web-mode-block-delimiter-face ((t (:foreground "blue"))))
+
+ ;; mmm-mode
+ '(mmm-code-submode-face ((t (:background nil))))
+ '(mmm-default-submode-face ((t (:background nil))))
  )
 
 ;;;###autoload
