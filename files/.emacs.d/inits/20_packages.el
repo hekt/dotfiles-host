@@ -191,7 +191,14 @@
   (lsp-prefer-capf t)
   (lsp-prefer-flymake 'flymake)
   (lsp-dart-analysis-sdk-dir "~/bin/flutter/bin/cache/dart-sdk")
+  (lsp-prefer-capf t)
+  (lsp-headerline-breadcrumb-enable nil)
   ;; (lsp-dart-analysis-server-command "~/bin/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot")
+  (lsp-eslint-run "onSave")
+  (lsp-eslint-server-command
+   '("node"
+     "/Users/kaz/repos/vscode-eslint/server/out/eslintServer.js"
+     "--stdio"))
   :commands lsp
   )
 ;; (defun lsp--sort-completions (completions)
@@ -238,6 +245,10 @@
 (use-package typescript-mode
   :mode
   (("\\.ts$" . typescript-mode))
+  :bind
+  (:map typescript-mode-map
+        ("C-c j" . 'lsp-ui-peek-find-definitions))
   :config
   (setq indent-tabs-mode nil)
-  (setq typescript-indent-level 2))
+  (setq typescript-indent-level 2)
+)

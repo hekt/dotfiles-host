@@ -23,7 +23,7 @@
  '(make-backup-files nil)
  '(menu-bar-mode nil)
  '(package-selected-packages
-   '(plantuml-mode vue-mode tide web-mode rjsx-mode dart-mode flymake haskell-mode flymake-diagnostic-at-point company-lsp lsp-haskell flycheck lsp-ui lsp-mode sql-indent expand-region dockerfile-mode editorconfig company-statistics go-mode company-go go-eldoc company-php ac-php company use-package swoop neotree toml-mode rust-mode yaml-mode init-loader auto-complete helm js2-mode markdown-mode multiple-cursors php-mode popwin typescript-mode yasnippet))
+   '(ac-php auto-complete company company-go company-lsp company-php company-statistics dart-mode dockerfile-mode editorconfig expand-region flycheck flymake flymake-diagnostic-at-point go-eldoc go-mode graphql-mode haskell-mode helm init-loader js2-mode lsp-haskell lsp-mode lsp-ui lua-mode markdown-mode multiple-cursors neotree php-mode plantuml-mode popwin rjsx-mode rust-mode sql-indent swoop tide toml-mode typescript-mode use-package vue-mode web-mode yaml-mode yasnippet))
  '(ring-bell-function 'ignore)
  '(scroll-error-top-bottom t)
  '(scroll-step 1)
